@@ -2,22 +2,39 @@ schema_version: 1
 workflows:
   inspect_existing_model:
     implemented: true
-    accepted_real_editor: false
+    accepted_real_editor: true
+    real_evidence: evidence/cubism54-workflow.json
     steps: [doctor, connect, inspect, snapshot]
     requires: [running_editor, allow_permission, selected_model_uid]
     evidence: [editor_probe, structure_snapshot]
   create_parameter_and_readback:
     implemented: true
-    accepted_real_editor: false
+    accepted_real_editor: true
+    real_evidence: evidence/cubism54-parameter-lifecycle.json
     steps: [doctor, snapshot, plan, native_backup, apply, verify]
     requires: [supported_edit_adapter, edit_permission, modeling_mode, saved_test_copy]
     evidence: [before, change_plan, native_backup, before_commit, after]
   native_create_cancel_read:
     implemented: true
-    accepted_real_editor: false
+    accepted_real_editor: true
+    real_evidence: evidence/cubism54-native-smoke.json
     entry: scripts/real_editor_smoke.py
     requires: [explicit_test_copy_flag, supported_edit_adapter, selected_model_uid]
     evidence: [before, changed, restored]
+  blink_binding_cancel:
+    implemented: true
+    accepted_real_editor: true
+    real_evidence: evidence/cubism54-workflow.json
+    steps: [snapshot_bindings, plan_blink, cancel_trial, verify_changes]
+    requires: [supported_edit_adapter, existing_eye_and_lid_meshes, saved_test_copy]
+  native_files_and_sdk:
+    implemented: true
+    accepted_real_editor: true
+    accepted_core_load: true
+    real_evidence: evidence/cubism54-workflow.json
+    entry: scripts/real_file_workflow.py
+    steps: [save_copy, close_reopen, export_moc3, generate_animation, verify_runtime]
+    requires: [explicit_test_copy_flag, supported_edit_adapter, english_ui, java_access_bridge, existing_texture_atlas, official_sdk_core, node_edge]
   offline_resource_check:
     implemented: true
     accepted_core_load: false
