@@ -1,0 +1,436 @@
+{
+  "passed": true,
+  "date": "2026-10-15",
+  "version": "0.1.0",
+  "editor": "5.4.00 alpha2",
+  "api": "1.1.0",
+  "platform": "Windows",
+  "ui_language": "English",
+  "installed_wheel": true,
+  "mcp_tools": 17,
+  "computer_use_calls": 0,
+  "raw_private_report_sha256": "b900c5709e4a108aed9666b6a58166afa537504fe95f63be51ca38aa908cbd18",
+  "calls": [
+    {
+      "tool": "live2d_snapshot_bindings",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 218.26,
+      "data": {}
+    },
+    {
+      "tool": "live2d_apply_blink_binding",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 145.92,
+      "data": {}
+    },
+    {
+      "tool": "live2d_apply_blink_binding",
+      "status": "rolled_back",
+      "postconditions_passed": true,
+      "elapsed_ms": 876.3,
+      "data": {
+        "cancel_trial": true
+      }
+    },
+    {
+      "tool": "live2d_verify_changes",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 124.77,
+      "data": {}
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 156.53,
+      "data": {}
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 4917.4,
+      "data": {
+        "sha256": "6887dd917d2e6b071c163af474d7bfd5f13a823a2b19df7738db4cee4a613d94",
+        "computer_use_calls": 0,
+        "core_load_verified": false
+      }
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 152.53,
+      "data": {}
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 5143.98,
+      "data": {
+        "saved_project_reopened": true,
+        "computer_use_calls": 0
+      }
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 150.77,
+      "data": {}
+    },
+    {
+      "tool": "live2d_editor_file",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 10632.46,
+      "data": {
+        "sha256": "239203192cdaa68cf10e7e188f4efd723fa3193438255976c479f789c53de180",
+        "computer_use_calls": 0,
+        "core_load_verified": false
+      }
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 100.23,
+      "data": {}
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 137.74,
+      "data": {
+        "format": "motion",
+        "core_loaded": false
+      }
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 93.83,
+      "data": {}
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 118.08,
+      "data": {
+        "format": "motion",
+        "core_loaded": false
+      }
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 76.35,
+      "data": {}
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 122.77,
+      "data": {
+        "format": "motion",
+        "core_loaded": false
+      }
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "review_required",
+      "postconditions_passed": false,
+      "elapsed_ms": 106.46,
+      "data": {}
+    },
+    {
+      "tool": "live2d_generate_animation",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 125.79,
+      "data": {
+        "format": "expression",
+        "core_loaded": false
+      }
+    },
+    {
+      "tool": "live2d_verify_runtime",
+      "status": "verified",
+      "postconditions_passed": true,
+      "elapsed_ms": 4323.93,
+      "data": {
+        "passed": true,
+        "coreLoaded": true,
+        "mocConsistency": true,
+        "webgl": true,
+        "parameters": 27,
+        "drawables": 10,
+        "coreVersion": 100663297,
+        "baseline": {
+          "visible": 349729,
+          "hash": 1918320150
+        },
+        "cases": [
+          {
+            "name": "direct blink",
+            "kind": "parameters",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": false,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349729,
+              "hash": 3728807466
+            },
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "direct body",
+            "kind": "parameters",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": true,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349736,
+              "hash": 881229998
+            },
+            "values": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "Blink",
+            "kind": "motion",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": false,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349729,
+              "hash": 3728807466
+            },
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "Typing",
+            "kind": "motion",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": true,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349736,
+              "hash": 881229998
+            },
+            "values": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "Mouse",
+            "kind": "motion",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": true,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349985,
+              "hash": 1246899255
+            },
+            "values": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "expression",
+            "kind": "expression",
+            "passed": true,
+            "pixelChange": true,
+            "geometryChange": false,
+            "parametersMatch": true,
+            "pixels": {
+              "visible": 349729,
+              "hash": 3728807466
+            },
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "scope": "existing-model automation skill; private fixture only; no desktop-pet implementation",
+  "original_source_unchanged": true
+}

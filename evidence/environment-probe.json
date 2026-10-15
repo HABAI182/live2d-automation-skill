@@ -1,0 +1,18 @@
+{
+  "python": "3.14.6",
+  "platform": "win32",
+  "listener": {
+    "found": false
+  },
+  "installed_editors": [
+    {
+      "install_dir": "D:\\Live2D Cubism 5.3",
+      "version": "5.3.04",
+      "version_source": "D:\\Live2D Cubism 5.3\\CubismEditor5.bat"
+    }
+  ],
+  "pending_recovery": false,
+  "connection": {
+    "connected": false
+  }
+}

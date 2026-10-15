@@ -1,0 +1,1041 @@
+{
+  "wheel_source_files_match": true,
+  "installed_package": "<WORKSPACE>\\outputs\\live2d-automation\\.venv\\Lib\\site-packages\\live2d_automation",
+  "files": [
+    {
+      "file": "__init__.py",
+      "sha256": "8ef4850b93674541484af230efd694fffda90395970ad85414997924cac629c7"
+    },
+    {
+      "file": "capabilities.py",
+      "sha256": "53bb06094f78ab17828a315ad37f0e62745041235970cc8709ed3be7d84ee1c3"
+    },
+    {
+      "file": "capabilities.yaml",
+      "sha256": "1a5bbb717f5fe1b78b0746524581757c428228259a7257302d9f283eb8fbec08"
+    },
+    {
+      "file": "cli.py",
+      "sha256": "5f8dc327f02046591da19bd9d5750d8ba698c85401f31e164c637401cc5ab07a"
+    },
+    {
+      "file": "engine.py",
+      "sha256": "787a5491e82def75358da1adb111f4966167648021ca9a5f148c1db5f481b9ff"
+    },
+    {
+      "file": "environment.py",
+      "sha256": "de10aba8007c02dea183a69deb784b8cc7791d7cb7b6e142e622c2c25262d3fb"
+    },
+    {
+      "file": "files.py",
+      "sha256": "60b7dc9395554ee0aaa001556bb199a3bb68fcfd3dc18d6e85ff088823bdd466"
+    },
+    {
+      "file": "models.py",
+      "sha256": "c3de193acb0bb6a5e172aaa89694ef4de6e90ad67944b1f8a5b4d3ef5ec6f21b"
+    },
+    {
+      "file": "server.py",
+      "sha256": "046db44ca89dd94025f3304d190eb275672ad369293465ba1e3744e917fd7801"
+    },
+    {
+      "file": "storage.py",
+      "sha256": "f487a9b0de18ef87c667dfbfd86f63efe7bc498ce44c4096f0d2e1fec220f081"
+    },
+    {
+      "file": "structure.py",
+      "sha256": "f9fadafa56dd4bcd9950797bbaae68ca9e71f2beeb6d566b7ce46fe7d9528ae7"
+    },
+    {
+      "file": "transport.py",
+      "sha256": "afa48dc58d2756f8b7c63509b73cf58c6daa0e2dab03baca7c86193532ffa7dc"
+    }
+  ],
+  "mcp_initialized": true,
+  "tools": [
+    "live2d_doctor",
+    "live2d_capabilities",
+    "live2d_connect",
+    "live2d_list_documents",
+    "live2d_snapshot_model",
+    "live2d_inspect_model",
+    "live2d_plan_changes",
+    "live2d_apply_parameter_ops",
+    "live2d_apply_structure_ops",
+    "live2d_verify_changes",
+    "live2d_rollback_job",
+    "live2d_validate_bundle"
+  ],
+  "all_output_schemas_present": true,
+  "native_doctor": {
+    "job_id": null,
+    "status": "verified",
+    "operation": "doctor",
+    "backend": "cubism_websocket",
+    "editor_version": "5.4.00 alpha2",
+    "model_uid": null,
+    "tool_call_succeeded": true,
+    "postconditions_passed": true,
+    "artifacts": [],
+    "evidence": [
+      {
+        "kind": "editor_probe",
+        "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\connection-1c3f2c2b01e047cdb14d0dbf6cb54660.json",
+        "sha256": "79a26bfe8e06bf7037322444b60fc848565d7a60525d9271f8753a11ee1c8954"
+      }
+    ],
+    "warnings": [],
+    "next_action": null,
+    "data": {
+      "python": "3.14.6",
+      "platform": "win32",
+      "listener": {
+        "found": true,
+        "pid": 34776,
+        "process_created": 1792040356.0743308,
+        "executable": "<WORKSPACE>\\work\\Cubism54Alpha2\\app\\jre\\bin\\java.exe",
+        "version": "5.4.00 alpha2",
+        "cubism_process": true,
+        "install_dir": "<WORKSPACE>\\work\\Cubism54Alpha2",
+        "version_source": "<WORKSPACE>\\work\\Cubism54Alpha2\\CubismEditor5.bat"
+      },
+      "installed_editors": [
+        {
+          "install_dir": "D:\\Live2D Cubism 5.3",
+          "version": "5.3.04",
+          "version_source": "D:\\Live2D Cubism 5.3\\CubismEditor5.bat"
+        }
+      ],
+      "pending_recovery": false,
+      "connection": {
+        "job_id": null,
+        "status": "verified",
+        "operation": "connect",
+        "backend": "cubism_websocket",
+        "editor_version": "5.4.00 alpha2",
+        "model_uid": null,
+        "tool_call_succeeded": true,
+        "postconditions_passed": true,
+        "artifacts": [],
+        "evidence": [
+          {
+            "kind": "editor_probe",
+            "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\connection-1c3f2c2b01e047cdb14d0dbf6cb54660.json",
+            "sha256": "79a26bfe8e06bf7037322444b60fc848565d7a60525d9271f8753a11ee1c8954"
+          }
+        ],
+        "warnings": [
+          "Connection verification is separate from native-edit or visual acceptance"
+        ],
+        "next_action": null,
+        "data": {
+          "connected": true,
+          "api_version": "1.1.0",
+          "editor_process": {
+            "found": true,
+            "pid": 34776,
+            "process_created": 1792040356.0743308,
+            "executable": "<WORKSPACE>\\work\\Cubism54Alpha2\\app\\jre\\bin\\java.exe",
+            "version": "5.4.00 alpha2",
+            "cubism_process": true,
+            "install_dir": "<WORKSPACE>\\work\\Cubism54Alpha2",
+            "version_source": "<WORKSPACE>\\work\\Cubism54Alpha2\\CubismEditor5.bat"
+          },
+          "approved": true,
+          "edit_approved": true,
+          "mode": "Modeling"
+        },
+        "error": null
+      }
+    },
+    "error": null
+  },
+  "native_snapshot": {
+    "job_id": null,
+    "status": "verified",
+    "operation": "snapshot",
+    "backend": "cubism_websocket",
+    "editor_version": null,
+    "model_uid": "8502d857d5304d15955b797eb35d75cf",
+    "tool_call_succeeded": true,
+    "postconditions_passed": true,
+    "artifacts": [],
+    "evidence": [
+      {
+        "kind": "structure_snapshot",
+        "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\snapshot-142847a93dd543e3b6fbb7c73f391ffd.json",
+        "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+      }
+    ],
+    "warnings": [],
+    "next_action": null,
+    "data": {
+      "snapshot": {
+        "model_uid": "8502d857d5304d15955b797eb35d75cf",
+        "editor_version": "5.4.00 alpha2",
+        "api_version": "1.1.0",
+        "normalized": {
+          "parameters": {
+            "ParamAngleX": {
+              "EntryType": "Parameter",
+              "Name": "角度 X",
+              "Id": "ParamAngleX",
+              "Min": -30.0,
+              "Default": 0.0,
+              "Max": 30.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamAngleY": {
+              "EntryType": "Parameter",
+              "Name": "角度 Y",
+              "Id": "ParamAngleY",
+              "Min": -30.0,
+              "Default": 0.0,
+              "Max": 30.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamAngleZ": {
+              "EntryType": "Parameter",
+              "Name": "角度 Z",
+              "Id": "ParamAngleZ",
+              "Min": -30.0,
+              "Default": 0.0,
+              "Max": 30.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamEyeLOpen": {
+              "EntryType": "Parameter",
+              "Name": "左眼 开闭",
+              "Id": "ParamEyeLOpen",
+              "Min": 0.0,
+              "Default": 1.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": [
+                0.0,
+                1.0
+              ]
+            },
+            "ParamEyeLSmile": {
+              "EntryType": "Parameter",
+              "Name": "左眼 微笑",
+              "Id": "ParamEyeLSmile",
+              "Min": 0.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamEyeROpen": {
+              "EntryType": "Parameter",
+              "Name": "右眼 开闭",
+              "Id": "ParamEyeROpen",
+              "Min": 0.0,
+              "Default": 1.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamEyeRSmile": {
+              "EntryType": "Parameter",
+              "Name": "右眼 微笑",
+              "Id": "ParamEyeRSmile",
+              "Min": 0.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamEyeBallX": {
+              "EntryType": "Parameter",
+              "Name": "眼珠 X",
+              "Id": "ParamEyeBallX",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamEyeBallY": {
+              "EntryType": "Parameter",
+              "Name": "眼珠 Y",
+              "Id": "ParamEyeBallY",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowLY": {
+              "EntryType": "Parameter",
+              "Name": "左眉 上下",
+              "Id": "ParamBrowLY",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowRY": {
+              "EntryType": "Parameter",
+              "Name": "右眉 上下",
+              "Id": "ParamBrowRY",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowLX": {
+              "EntryType": "Parameter",
+              "Name": "左眉 左右",
+              "Id": "ParamBrowLX",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowRX": {
+              "EntryType": "Parameter",
+              "Name": "右眉 左右",
+              "Id": "ParamBrowRX",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowLAngle": {
+              "EntryType": "Parameter",
+              "Name": "左眉 角度",
+              "Id": "ParamBrowLAngle",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowRAngle": {
+              "EntryType": "Parameter",
+              "Name": "右眉 角度",
+              "Id": "ParamBrowRAngle",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowLForm": {
+              "EntryType": "Parameter",
+              "Name": "左眉 変形",
+              "Id": "ParamBrowLForm",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBrowRForm": {
+              "EntryType": "Parameter",
+              "Name": "右眉 変形",
+              "Id": "ParamBrowRForm",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamMouthForm": {
+              "EntryType": "Parameter",
+              "Name": "嘴 变形",
+              "Id": "ParamMouthForm",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamMouthOpenY": {
+              "EntryType": "Parameter",
+              "Name": "嘴 开闭",
+              "Id": "ParamMouthOpenY",
+              "Min": 0.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamCheek": {
+              "EntryType": "Parameter",
+              "Name": "脸颊泛红",
+              "Id": "ParamCheek",
+              "Min": 0.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBodyAngleX": {
+              "EntryType": "Parameter",
+              "Name": "身体旋转 X",
+              "Id": "ParamBodyAngleX",
+              "Min": -10.0,
+              "Default": 0.0,
+              "Max": 10.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": [
+                -10.0,
+                0.0,
+                10.0
+              ]
+            },
+            "ParamBodyAngleY": {
+              "EntryType": "Parameter",
+              "Name": "身体旋转 Y",
+              "Id": "ParamBodyAngleY",
+              "Min": -10.0,
+              "Default": 0.0,
+              "Max": 10.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": [
+                -10.0,
+                0.0,
+                10.0
+              ]
+            },
+            "ParamBodyAngleZ": {
+              "EntryType": "Parameter",
+              "Name": "身体旋转 Z",
+              "Id": "ParamBodyAngleZ",
+              "Min": -10.0,
+              "Default": 0.0,
+              "Max": 10.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamBreath": {
+              "EntryType": "Parameter",
+              "Name": "呼吸",
+              "Id": "ParamBreath",
+              "Min": 0.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamHairFront": {
+              "EntryType": "Parameter",
+              "Name": "摇动 前发",
+              "Id": "ParamHairFront",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamHairSide": {
+              "EntryType": "Parameter",
+              "Name": "摇动 侧发",
+              "Id": "ParamHairSide",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            },
+            "ParamHairBack": {
+              "EntryType": "Parameter",
+              "Name": "摇动 后发",
+              "Id": "ParamHairBack",
+              "Min": -1.0,
+              "Default": 0.0,
+              "Max": 1.0,
+              "IsRepeat": false,
+              "IsBlendShape": false,
+              "GroupId": "",
+              "KeyValues": []
+            }
+          },
+          "groups": {},
+          "parts": {
+            "bird": {
+              "Id": "bird",
+              "Name": "bird",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh": {
+              "Id": "ArtMesh",
+              "Name": "keyboard-hand",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh0": {
+              "Id": "ArtMesh0",
+              "Name": "mouse-hand",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "mouse": {
+              "Id": "mouse",
+              "Name": "mouse",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "keyboard": {
+              "Id": "keyboard",
+              "Name": "keyboard",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh1": {
+              "Id": "ArtMesh1",
+              "Name": "lid-right",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh2": {
+              "Id": "ArtMesh2",
+              "Name": "lid-left",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh3": {
+              "Id": "ArtMesh3",
+              "Name": "eye-right",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh4": {
+              "Id": "ArtMesh4",
+              "Name": "eye-left",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh5": {
+              "Id": "ArtMesh5",
+              "Name": "head-body",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            }
+          },
+          "deformers": {
+            "bird": {
+              "Id": "bird",
+              "Name": "bird",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh": {
+              "Id": "ArtMesh",
+              "Name": "keyboard-hand",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh0": {
+              "Id": "ArtMesh0",
+              "Name": "mouse-hand",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "mouse": {
+              "Id": "mouse",
+              "Name": "mouse",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "keyboard": {
+              "Id": "keyboard",
+              "Name": "keyboard",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh1": {
+              "Id": "ArtMesh1",
+              "Name": "lid-right",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh2": {
+              "Id": "ArtMesh2",
+              "Name": "lid-left",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh3": {
+              "Id": "ArtMesh3",
+              "Name": "eye-right",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh4": {
+              "Id": "ArtMesh4",
+              "Name": "eye-left",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            },
+            "ArtMesh5": {
+              "Id": "ArtMesh5",
+              "Name": "head-body",
+              "Type": "ArtMesh",
+              "TreeParentId": ""
+            }
+          }
+        },
+        "raw": {
+          "ParameterStructure": {
+            "GroupName": "Root",
+            "Id": "ParamGroupRoot",
+            "Entries": [
+              {
+                "EntryType": "Parameter",
+                "Name": "角度 X",
+                "Id": "ParamAngleX",
+                "Min": -30.0,
+                "Default": 0.0,
+                "Max": 30.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "角度 Y",
+                "Id": "ParamAngleY",
+                "Min": -30.0,
+                "Default": 0.0,
+                "Max": 30.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "角度 Z",
+                "Id": "ParamAngleZ",
+                "Min": -30.0,
+                "Default": 0.0,
+                "Max": 30.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眼 开闭",
+                "Id": "ParamEyeLOpen",
+                "Min": 0.0,
+                "Default": 1.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眼 微笑",
+                "Id": "ParamEyeLSmile",
+                "Min": 0.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眼 开闭",
+                "Id": "ParamEyeROpen",
+                "Min": 0.0,
+                "Default": 1.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眼 微笑",
+                "Id": "ParamEyeRSmile",
+                "Min": 0.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "眼珠 X",
+                "Id": "ParamEyeBallX",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "眼珠 Y",
+                "Id": "ParamEyeBallY",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眉 上下",
+                "Id": "ParamBrowLY",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眉 上下",
+                "Id": "ParamBrowRY",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眉 左右",
+                "Id": "ParamBrowLX",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眉 左右",
+                "Id": "ParamBrowRX",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眉 角度",
+                "Id": "ParamBrowLAngle",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眉 角度",
+                "Id": "ParamBrowRAngle",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "左眉 変形",
+                "Id": "ParamBrowLForm",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "右眉 変形",
+                "Id": "ParamBrowRForm",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "嘴 变形",
+                "Id": "ParamMouthForm",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "嘴 开闭",
+                "Id": "ParamMouthOpenY",
+                "Min": 0.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "脸颊泛红",
+                "Id": "ParamCheek",
+                "Min": 0.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "身体旋转 X",
+                "Id": "ParamBodyAngleX",
+                "Min": -10.0,
+                "Default": 0.0,
+                "Max": 10.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "身体旋转 Y",
+                "Id": "ParamBodyAngleY",
+                "Min": -10.0,
+                "Default": 0.0,
+                "Max": 10.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "身体旋转 Z",
+                "Id": "ParamBodyAngleZ",
+                "Min": -10.0,
+                "Default": 0.0,
+                "Max": 10.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "呼吸",
+                "Id": "ParamBreath",
+                "Min": 0.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "摇动 前发",
+                "Id": "ParamHairFront",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "摇动 侧发",
+                "Id": "ParamHairSide",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              },
+              {
+                "EntryType": "Parameter",
+                "Name": "摇动 后发",
+                "Id": "ParamHairBack",
+                "Min": -1.0,
+                "Default": 0.0,
+                "Max": 1.0,
+                "Repeat": false,
+                "Type": 0
+              }
+            ]
+          },
+          "PartStructure": {
+            "Children": [
+              {
+                "Id": "bird",
+                "Name": "bird",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh",
+                "Name": "keyboard-hand",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh0",
+                "Name": "mouse-hand",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "mouse",
+                "Name": "mouse",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "keyboard",
+                "Name": "keyboard",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh1",
+                "Name": "lid-right",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh2",
+                "Name": "lid-left",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh3",
+                "Name": "eye-right",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh4",
+                "Name": "eye-left",
+                "Type": "ArtMesh"
+              },
+              {
+                "Id": "ArtMesh5",
+                "Name": "head-body",
+                "Type": "ArtMesh"
+              }
+            ],
+            "Id": "%Root",
+            "Name": "Root Part",
+            "Type": "Part"
+          },
+          "DeformerStructure": [
+            {
+              "Name": "root",
+              "Id": "%Root",
+              "Type": null,
+              "Children": [
+                {
+                  "Name": "bird",
+                  "Id": "bird",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "keyboard-hand",
+                  "Id": "ArtMesh",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "mouse-hand",
+                  "Id": "ArtMesh0",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "mouse",
+                  "Id": "mouse",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "keyboard",
+                  "Id": "keyboard",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "lid-right",
+                  "Id": "ArtMesh1",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "lid-left",
+                  "Id": "ArtMesh2",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "eye-right",
+                  "Id": "ArtMesh3",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "eye-left",
+                  "Id": "ArtMesh4",
+                  "Type": "ArtMesh"
+                },
+                {
+                  "Name": "head-body",
+                  "Id": "ArtMesh5",
+                  "Type": "ArtMesh"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "snapshot_sha256": "49122fdf57b5bfd2aebbdd54893365101d00d370ef59ecaacc62c055e124b0e6",
+      "scope": "structure_only"
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.live2d-state/
+*.token
+.local-install-backups/
+codex-mcp.toml
+generated/
+.mypy_cache/
+node_modules/

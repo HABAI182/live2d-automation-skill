@@ -1,0 +1,24 @@
+{
+  "job_id": "job-real-21edaf227be4",
+  "status": "blocked",
+  "operation": "real_editor_smoke",
+  "backend": "cubism_websocket",
+  "editor_version": null,
+  "model_uid": null,
+  "tool_call_succeeded": false,
+  "postconditions_passed": false,
+  "artifacts": [],
+  "evidence": [],
+  "warnings": [],
+  "next_action": null,
+  "data": {
+    "mode": "real_editor_only",
+    "native_trial_passed": false,
+    "outcome": "not_passed"
+  },
+  "error": {
+    "code": "EDITOR_UNAVAILABLE",
+    "message": "No usable Cubism WebSocket at the loopback port",
+    "reason": "ConnectionRefusedError"
+  }
+}

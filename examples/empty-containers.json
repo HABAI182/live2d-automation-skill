@@ -1,0 +1,5 @@
+[
+  {"kind":"create_part","id":"PetRoot","name":"Pet Root"},
+  {"kind":"create_warp","id":"PetWarp","name":"Pet Warp","parent_id":"PetRoot","warp_div_h":3,"warp_div_v":3,"bezier_div_h":2,"bezier_div_v":2},
+  {"kind":"create_rotation","id":"PetRotation","name":"Pet Rotation","parent_id":"PetRoot"}
+]

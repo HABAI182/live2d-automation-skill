@@ -1,0 +1,4 @@
+[
+  {"kind":"create_group","id":"PetInteraction","name":"Pet Interaction"},
+  {"kind":"create_parameter","id":"ParamPetTap","name":"Pet Tap","group_id":"PetInteraction","min":0,"default":0,"max":1}
+]

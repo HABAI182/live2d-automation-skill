@@ -1,0 +1,250 @@
+{
+  "real_editor": true,
+  "computer_use_calls": 0,
+  "model_uid": "8502d857d5304d15955b797eb35d75cf",
+  "editor_version": "5.4.00 alpha2",
+  "api_version": "1.1.0",
+  "passed": true,
+  "restored": true,
+  "before_sha256": "49122fdf57b5bfd2aebbdd54893365101d00d370ef59ecaacc62c055e124b0e6",
+  "after_sha256": "49122fdf57b5bfd2aebbdd54893365101d00d370ef59ecaacc62c055e124b0e6",
+  "elapsed_ms": 1870.412,
+  "operations": [
+    "create_group",
+    "create_parameter",
+    "update_group",
+    "update_parameter",
+    "move_parameter",
+    "delete_parameter",
+    "delete_group"
+  ],
+  "stages": [
+    {
+      "job_id": "job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c",
+      "status": "verified",
+      "operation": "apply",
+      "backend": "cubism_websocket",
+      "editor_version": "5.4.00 alpha2",
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\before.json",
+          "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+        },
+        {
+          "kind": "change_plan",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\plan.json",
+          "sha256": "e55bf671ec4fb2e20a03fcb7c7e666e37c18b9dacec0a25938ecec634d39c1c8"
+        },
+        {
+          "kind": "last_saved_native_backup",
+          "path": "<WORKSPACE>\\work\\alpha-state\\jobs\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\original.cmo3",
+          "sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\before-commit.json",
+          "sha256": "c5f43a5f6ef1f618da9402583a368721a0836a4b4753d4392d5f01f556c4485a"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\after.json",
+          "sha256": "c5f43a5f6ef1f618da9402583a368721a0836a4b4753d4392d5f01f556c4485a"
+        }
+      ],
+      "warnings": [
+        "Changes are in Editor memory; native project save/reopen and visual verification remain separate",
+        "Backup contains last saved native project; structural snapshot covers API edits, not all unsaved artwork"
+      ],
+      "next_action": "visual_review_and_save_copy",
+      "data": {
+        "scope": "structure_only",
+        "saved_to_disk": false,
+        "snapshot_sha256": "2cfbb6d538ab48f7f507b9221151bab8333126c8c56ce853e2b87c3de8551085"
+      },
+      "error": null
+    },
+    {
+      "job_id": "job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c",
+      "status": "verified",
+      "operation": "verify",
+      "backend": "cubism_websocket",
+      "editor_version": null,
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-6e3830e09bee4e6ba4eeb004081ae85c\\verify-b0ecbba956e144b0b93518434e05cf26.json",
+          "sha256": "c5f43a5f6ef1f618da9402583a368721a0836a4b4753d4392d5f01f556c4485a"
+        }
+      ],
+      "warnings": [
+        "Current structure verified; geometry and saved project were not verified"
+      ],
+      "next_action": null,
+      "data": {
+        "scope": "structure_only"
+      },
+      "error": null
+    },
+    {
+      "job_id": "job-lifecycle-e34fe57026e7470b9323ea6be1b52054",
+      "status": "verified",
+      "operation": "apply",
+      "backend": "cubism_websocket",
+      "editor_version": "5.4.00 alpha2",
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\before.json",
+          "sha256": "c5f43a5f6ef1f618da9402583a368721a0836a4b4753d4392d5f01f556c4485a"
+        },
+        {
+          "kind": "change_plan",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\plan.json",
+          "sha256": "851bd978e99af6ecbc9d207a12f73246ed6e539d0961d2421cdecd0b151f5bc6"
+        },
+        {
+          "kind": "last_saved_native_backup",
+          "path": "<WORKSPACE>\\work\\alpha-state\\jobs\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\original.cmo3",
+          "sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\before-commit.json",
+          "sha256": "f29d7cd4b378cc51c9f29e4dd4d85844011ae059b636a7c36748665ce74207ff"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\after.json",
+          "sha256": "f29d7cd4b378cc51c9f29e4dd4d85844011ae059b636a7c36748665ce74207ff"
+        }
+      ],
+      "warnings": [
+        "Changes are in Editor memory; native project save/reopen and visual verification remain separate",
+        "Backup contains last saved native project; structural snapshot covers API edits, not all unsaved artwork"
+      ],
+      "next_action": "visual_review_and_save_copy",
+      "data": {
+        "scope": "structure_only",
+        "saved_to_disk": false,
+        "snapshot_sha256": "0f549a65100021bde61dfa29a44d338f7db4e4e8f9b3a4f2f151532260d0140d"
+      },
+      "error": null
+    },
+    {
+      "job_id": "job-lifecycle-e34fe57026e7470b9323ea6be1b52054",
+      "status": "verified",
+      "operation": "verify",
+      "backend": "cubism_websocket",
+      "editor_version": null,
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-e34fe57026e7470b9323ea6be1b52054\\verify-4e70515e0d1646dca29ceb35b15bfda4.json",
+          "sha256": "f29d7cd4b378cc51c9f29e4dd4d85844011ae059b636a7c36748665ce74207ff"
+        }
+      ],
+      "warnings": [
+        "Current structure verified; geometry and saved project were not verified"
+      ],
+      "next_action": null,
+      "data": {
+        "scope": "structure_only"
+      },
+      "error": null
+    },
+    {
+      "job_id": "job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82",
+      "status": "verified",
+      "operation": "apply",
+      "backend": "cubism_websocket",
+      "editor_version": "5.4.00 alpha2",
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\before.json",
+          "sha256": "f29d7cd4b378cc51c9f29e4dd4d85844011ae059b636a7c36748665ce74207ff"
+        },
+        {
+          "kind": "change_plan",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\plan.json",
+          "sha256": "43a316205f63773c7d8a345911ec59d843fef723d96d3d5771eec3479c9b7ab8"
+        },
+        {
+          "kind": "last_saved_native_backup",
+          "path": "<WORKSPACE>\\work\\alpha-state\\jobs\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\original.cmo3",
+          "sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\before-commit.json",
+          "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+        },
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\after.json",
+          "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+        }
+      ],
+      "warnings": [
+        "Changes are in Editor memory; native project save/reopen and visual verification remain separate",
+        "Backup contains last saved native project; structural snapshot covers API edits, not all unsaved artwork"
+      ],
+      "next_action": "visual_review_and_save_copy",
+      "data": {
+        "scope": "structure_only",
+        "saved_to_disk": false,
+        "snapshot_sha256": "49122fdf57b5bfd2aebbdd54893365101d00d370ef59ecaacc62c055e124b0e6"
+      },
+      "error": null
+    },
+    {
+      "job_id": "job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82",
+      "status": "verified",
+      "operation": "verify",
+      "backend": "cubism_websocket",
+      "editor_version": null,
+      "model_uid": "8502d857d5304d15955b797eb35d75cf",
+      "tool_call_succeeded": true,
+      "postconditions_passed": true,
+      "artifacts": [],
+      "evidence": [
+        {
+          "kind": "structure_snapshot",
+          "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-lifecycle-dd84785f5e084566bcc03b6bc5c8df82\\verify-d3cb96716d3e4579be02532740394ad0.json",
+          "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+        }
+      ],
+      "warnings": [
+        "Current structure verified; geometry and saved project were not verified"
+      ],
+      "next_action": null,
+      "data": {
+        "scope": "structure_only"
+      },
+      "error": null
+    }
+  ],
+  "error": null,
+  "native_file_saved": false
+}

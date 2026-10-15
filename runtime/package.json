@@ -1,0 +1,10 @@
+{
+  "name": "live2d-automation-runtime-verifier",
+  "private": true,
+  "description": "Optional local verifier; no SDK or model assets included",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.64.1",
+    "vite": "7.3.7"
+  }
+}
