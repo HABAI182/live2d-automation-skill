@@ -1,0 +1,101 @@
+schema_version: 1
+adapter:
+  name: cubism54_alpha2
+  api_version: '1.1.0'
+  editor_version_pattern: '5\.4\.0+(?:[- .]*)alpha2'
+  available_through: '2026-10-18'
+  platform: windows
+capabilities:
+  editor.connect:
+    backend: cubism_websocket
+    level: verified
+    implemented: true
+    verified_versions: ['5.3.04 / API 1.0.1', '5.4.00 alpha2 / API 1.1.0']
+    real_editor_evidence: [evidence/cubism53-api-smoke.json, evidence/cubism53-mcp-real-calls.json]
+    limitations: [One Windows installation, Human Allow grant required, Not proof of native editing]
+  model.inspect:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-native-smoke.json, evidence/cubism54-parameter-lifecycle.json]
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+  parameter.edit:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-native-smoke.json, evidence/cubism54-parameter-lifecycle.json]
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+    limitations: [No parameter ID renaming, No deletion of bound parameters, No keyform geometry authoring]
+  structure.create:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-native-smoke.json, evidence/cubism54-parameter-lifecycle.json]
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+    limitations: [Empty Part/Warp/Rotation containers only, No automatic child binding]
+  transaction.rollback:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-native-smoke.json, evidence/cubism54-parameter-lifecycle.json]
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+    limitations: [Rollback confirmed by structural readback, Manual native-backup restore after uncertain commit]
+  bundle.validate:
+    backend: file
+    level: pilot
+    implemented: true
+    real_editor_evidence: []
+    limitations: [Resources and JSON only, No Cubism Core load, No visual validation]
+  geometry.edit:
+    backend: unavailable
+    level: blocked
+    implemented: false
+  native.export:
+    backend: java_access_bridge_and_win32_shortcuts
+    level: pilot
+    implemented: true
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0 / English UI / Windows']
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [Existing texture atlas required, New empty output directory, Separate SDK verification]
+  native.save_reopen:
+    backend: java_access_bridge_and_win32_shortcuts
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [New save copy only, Reopen requires successful save job, Property/key readback excludes vertex coordinates]
+  binding.blink:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [Existing eye and lid ArtMeshes only, Opacity keyforms not geometry sculpting, At most 64 forms per object]
+  model.bindings:
+    backend: cubism_websocket
+    level: pilot
+    implemented: true
+    verified_versions: ['5.4.00 alpha2 / API 1.1.0']
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [Properties and keys only, No vertex coordinate snapshot]
+  animation.generate:
+    backend: file
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [Linear parameter curves, Requires live model parameter ranges, Expressions range checked at default pose]
+  runtime.verify:
+    backend: official_cubism_sdk_webgl
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [User supplied official SDK and Core, Optional Node and Edge runtime, Deterministic checks not artistic QA]
+  gui.automation:
+    backend: java_access_bridge_and_win32_shortcuts
+    level: pilot
+    implemented: true
+    real_editor_evidence: [evidence/cubism54-workflow.json]
+    limitations: [Save reopen and export only, Fixed English UI profile, Brief foreground focus required, No computer-use service]
+  psd.prepare:
+    backend: unavailable
+    level: blocked
+    implemented: false

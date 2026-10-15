@@ -1,0 +1,25 @@
+schema_version: 1
+workflows:
+  inspect_existing_model:
+    implemented: true
+    accepted_real_editor: false
+    steps: [doctor, connect, inspect, snapshot]
+    requires: [running_editor, allow_permission, selected_model_uid]
+    evidence: [editor_probe, structure_snapshot]
+  create_parameter_and_readback:
+    implemented: true
+    accepted_real_editor: false
+    steps: [doctor, snapshot, plan, native_backup, apply, verify]
+    requires: [supported_edit_adapter, edit_permission, modeling_mode, saved_test_copy]
+    evidence: [before, change_plan, native_backup, before_commit, after]
+  native_create_cancel_read:
+    implemented: true
+    accepted_real_editor: false
+    entry: scripts/real_editor_smoke.py
+    requires: [explicit_test_copy_flag, supported_edit_adapter, selected_model_uid]
+    evidence: [before, changed, restored]
+  offline_resource_check:
+    implemented: true
+    accepted_core_load: false
+    steps: [validate_bundle]
+    evidence: [resource_hashes]

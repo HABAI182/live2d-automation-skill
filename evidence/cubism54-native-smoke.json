@@ -1,0 +1,50 @@
+{
+  "job_id": "job-real-7d50f70df16f",
+  "status": "rolled_back",
+  "operation": "real_editor_smoke",
+  "backend": "cubism_websocket",
+  "editor_version": "5.4.00 alpha2",
+  "model_uid": "8502d857d5304d15955b797eb35d75cf",
+  "tool_call_succeeded": true,
+  "postconditions_passed": true,
+  "artifacts": [],
+  "evidence": [
+    {
+      "kind": "structure_snapshot",
+      "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-real-7d50f70df16f\\before.json",
+      "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+    },
+    {
+      "kind": "last_saved_native_backup",
+      "path": "<WORKSPACE>\\work\\alpha-state\\jobs\\job-real-7d50f70df16f\\original.cmo3",
+      "sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0"
+    },
+    {
+      "kind": "structure_snapshot",
+      "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-real-7d50f70df16f\\changed.json",
+      "sha256": "d9bc8a93327f58ac9611f4fadc8736b3b8035e78bb277b437e4095e7af0b5577"
+    },
+    {
+      "kind": "rollback_readback",
+      "path": "<WORKSPACE>\\work\\alpha-state\\evidence\\job-real-7d50f70df16f\\restored.json",
+      "sha256": "90886259cc01b8173b6d44c4f177182fe693513057a1016d9d6c1f19c1d4f6c8"
+    }
+  ],
+  "warnings": [],
+  "next_action": null,
+  "data": {
+    "real_editor": true,
+    "outcome": "native_create_read_cancel_read_passed",
+    "geometry_verified": false,
+    "computer_use_calls": 0,
+    "operations": [
+      "create_group",
+      "create_parameter",
+      "create_part",
+      "create_warp",
+      "create_rotation"
+    ],
+    "elapsed_ms": 724.46
+  },
+  "error": null
+}

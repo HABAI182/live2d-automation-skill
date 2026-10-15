@@ -1,0 +1,520 @@
+{
+  "computer_use_calls": 0,
+  "native_file_before_sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0",
+  "checks": [
+    {
+      "operation": "batch_parameter_preview",
+      "round": 0,
+      "requested": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "readback": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "batch_parameter_preview",
+      "round": 1,
+      "requested": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "readback": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "batch_parameter_preview",
+      "round": 2,
+      "requested": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.800000000000001
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "readback": [
+        {
+          "Id": "ParamAngleX",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleY",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Value": -7.8
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Value": 0.37
+        },
+        {
+          "Id": "ParamEyeLSmile",
+          "Value": 0.37
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "mutated_native_structure": false,
+  "visual_verified": false,
+  "api_version": "1.0.1",
+  "documents": {
+    "PhysicsDocuments": [],
+    "ModelingDocuments": [
+      {
+        "DocumentUID": "5140e3c9944640bfb19de95b7e69ec32",
+        "DocumentFilePath": "<WORKSPACE>\\outputs\\real-editor-test\\YangyangXuanling-ApiTest.cmo3",
+        "Views": [
+          {
+            "ModelUID": "ca174a9b79464dab9e638eb66c46e50b"
+          }
+        ]
+      }
+    ],
+    "AnimationDocuments": []
+  },
+  "model_uid": "ca174a9b79464dab9e638eb66c46e50b",
+  "edit_mode": {
+    "EditMode": "Modeling"
+  },
+  "parameters": [
+    {
+      "Id": "ParamAngleX",
+      "Name": "角度 X",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 30.0,
+      "Min": -30.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamAngleY",
+      "Name": "角度 Y",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 30.0,
+      "Min": -30.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamAngleZ",
+      "Name": "角度 Z",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 30.0,
+      "Min": -30.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Name": "左眼 开闭",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 1.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": [
+        {
+          "Value": 0.0
+        },
+        {
+          "Value": 1.0
+        }
+      ]
+    },
+    {
+      "Id": "ParamEyeLSmile",
+      "Name": "左眼 微笑",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Name": "右眼 开闭",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 1.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamEyeRSmile",
+      "Name": "右眼 微笑",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamEyeBallX",
+      "Name": "眼珠 X",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamEyeBallY",
+      "Name": "眼珠 Y",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Name": "左眉 上下",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Name": "右眉 上下",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowLX",
+      "Name": "左眉 左右",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowRX",
+      "Name": "右眉 左右",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowLAngle",
+      "Name": "左眉 角度",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowRAngle",
+      "Name": "右眉 角度",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowLForm",
+      "Name": "左眉 変形",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBrowRForm",
+      "Name": "右眉 変形",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamMouthForm",
+      "Name": "嘴 变形",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamMouthOpenY",
+      "Name": "嘴 开闭",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamCheek",
+      "Name": "脸颊泛红",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBodyAngleX",
+      "Name": "身体旋转 X",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 10.0,
+      "Min": -10.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": [
+        {
+          "Value": -10.0
+        },
+        {
+          "Value": 0.0
+        },
+        {
+          "Value": 10.0
+        }
+      ]
+    },
+    {
+      "Id": "ParamBodyAngleY",
+      "Name": "身体旋转 Y",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 10.0,
+      "Min": -10.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": [
+        {
+          "Value": -10.0
+        },
+        {
+          "Value": 0.0
+        },
+        {
+          "Value": 10.0
+        }
+      ]
+    },
+    {
+      "Id": "ParamBodyAngleZ",
+      "Name": "身体旋转 Z",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 10.0,
+      "Min": -10.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamBreath",
+      "Name": "呼吸",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": 0.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamHairFront",
+      "Name": "摇动 前发",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamHairSide",
+      "Name": "摇动 侧发",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    },
+    {
+      "Id": "ParamHairBack",
+      "Name": "摇动 后发",
+      "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+      "Default": 0.0,
+      "Max": 1.0,
+      "Min": -1.0,
+      "Repeat": false,
+      "Type": 0,
+      "Keyform": []
+    }
+  ],
+  "groups": {
+    "Groups": [
+      {
+        "GroupUID": "2964f9a1dac74dd9a74a9917f20eb273",
+        "GroupName": "Root Parameter Group"
+      }
+    ]
+  },
+  "request_latency_ms": {
+    "samples": 20,
+    "median": 1.972200000182056,
+    "max": 6.9604999998773565,
+    "min": 1.4781999998376705
+  },
+  "status": "verified_api_subset",
+  "restored": true,
+  "native_file_after_sha256": "128106e0c7d7e8e88e13fabf90ee4a3d41f35797c812308be66ceae293bf29b0",
+  "native_file_unchanged": true,
+  "elapsed_seconds": 0.6289941999993971
+}
