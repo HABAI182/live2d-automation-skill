@@ -6,6 +6,7 @@ import asyncio
 import ctypes
 import hashlib
 import json
+import sys
 import time
 import uuid
 from pathlib import Path
@@ -23,8 +24,14 @@ def logical(snapshot):
     return {"normalized": snapshot["structure"]["normalized"], "objects": snapshot["objects"]}
 
 
+def require_windows() -> None:
+    if sys.platform != "win32":
+        raise AutomationError("UNSUPPORTED_PLATFORM", "Native Editor UI requires Windows")
+
+
 class EditorUI:
     def __init__(self, pid: int):
+        require_windows()
         import win32api
         import win32con
         import win32gui
@@ -65,6 +72,8 @@ class EditorUI:
         return selected[0], window
 
     def focus(self, hwnd):
+        if sys.platform != "win32":
+            raise AutomationError("UNSUPPORTED_PLATFORM", "Native Editor UI requires Windows")
         self.gui.ShowWindow(hwnd, self.con.SW_RESTORE)
         try:
             self.gui.SetForegroundWindow(hwnd)

@@ -23,6 +23,11 @@ from .structure import check_desired, normalize, plan_operations
 from .transport import CubismWS
 
 
+def adapter_date(now: datetime | None = None) -> date:
+    """Use the vendor's JST expiry date, independent of the host timezone."""
+    return (now or datetime.now(timezone.utc)).astimezone(timezone(timedelta(hours=9))).date()
+
+
 class Engine:
     def __init__(self, settings: Settings, transport=None):
         self.settings = settings
@@ -33,7 +38,7 @@ class Engine:
         self.lock_root.mkdir(parents=True, exist_ok=True)
         self.marker = self.lock_root / f"editor-{settings.port}.recovery.json"
         self.editor: dict[str, Any] | None = None
-        self.today = lambda: datetime.now(timezone(timedelta(hours=8))).date()
+        self.today = adapter_date
         self.listener_probe = listener_info
 
     async def run(self, method: str, **kwargs) -> Result:
