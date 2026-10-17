@@ -1,0 +1,7 @@
+# CI tools pinned to the locally verified environment; runtime ranges remain in pyproject.toml.
+pytest==9.1.1
+pytest-asyncio==1.4.0
+ruff==0.17.1
+mypy==2.4.0
+build==1.6.1
+hatchling==1.32.4

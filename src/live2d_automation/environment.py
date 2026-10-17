@@ -64,7 +64,7 @@ def listener_info(port: int) -> dict:
 
 
 def environment_report(port: int) -> dict:
-    installs = []
+    installs: list[dict] = []
     if sys.platform == "win32":
         # Read immediate children only; never scan all user content.
         for root in (Path("D:/"), Path("C:/Program Files"), Path("C:/Program Files (x86)")):

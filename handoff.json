@@ -50,7 +50,7 @@
   ],
   "publishing": {
     "repository": "https://github.com/HABAI182/live2d-automation-skill",
-    "visibility": "private",
+    "visibility": "public",
     "mode": "sanitized accepted source snapshot",
     "excluded": [
       "character assets",
@@ -60,6 +60,7 @@
       "tokens",
       "local runtime config"
     ],
-    "remote_ci": "template retained; not enabled because current OAuth lacks workflow scope"
+    "remote_ci": "checks workflow added; actual run status is recorded separately in Actions and the reform report",
+    "visibility_checked_on": "2026-10-17"
   }
 }

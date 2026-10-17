@@ -13,9 +13,11 @@ powershell -ExecutionPolicy Bypass -File scripts/install_windows.ps1 -RegisterMc
 
 安装只影响本包虚拟环境和独立 Skill/MCP 配置；会备份原 Skill/config。`-SkipRuntime` 可跳过 Node 依赖。重载 MCP 或新建会话后发现 17 个工具；CLI 可立即使用。首次启动 Editor 的 JAB 设置、授权、示例和恢复方式见 [使用指南](docs/user-guide.md) 与 [Skill](skills/live2d-automation/SKILL.md)。
 
+**适配即将到期：Alpha2 仅可用至 2026-10-18 23:59 JST（北京时间 22:59），到期后禁止原生写入；未知后续版本必须重新探测和实机验收。** 兼容范围见 [compatibility.md](docs/compatibility.md)。
+
 API 写入默认计划模式，需 UID、确认和新鲜快照哈希，跨进程互斥并保留备份/恢复标记。工具不提供任意 shell/raw API，不写伪造 MOC3 或直接修改 CMO3 二进制。Alpha2 适配期限为 2026-10-18，后续版本需重新适配；资源检查与 SDK 验证可独立运行。
 
-开发：`python -m pip install -e '.[dev]'`，然后 `pytest -q`、`ruff check .`、`mypy src`、`python -m build`。GitHub 来源、固定提交及设计取舍见 [upstream-review.md](docs/upstream-review.md)。工具代码 MIT；没有捆绑角色资产、SDK/Core、Editor 或令牌。GitHub 分发使用用户指定的私人仓库。
+开发：`python -m pip install -e '.[dev]'`，然后 `pytest -q`、`ruff check .`、`mypy src`、`python -m build`。GitHub 来源、固定提交及设计取舍见 [upstream-review.md](docs/upstream-review.md)。工具代码 MIT；没有捆绑角色资产、SDK/Core、Editor 或令牌。当前 GitHub 仓库为公开的脱敏工具代码仓库；模型测试夹具和原始证据留在私有存储，未随公开源码发布。
 
 
-GitHub Actions 检查模板位于 [docs/github-actions-checks.yml](docs/github-actions-checks.yml)。当前 GitHub 登录缺少 workflow scope，未自动启用远端 CI；本机完整测试已执行。
+检查入口为 [.github/workflows/ci.yml](.github/workflows/ci.yml)，同步模板见 [docs/github-actions-checks.yml](docs/github-actions-checks.yml)。CI 只做单元、静态和打包检查；真实 Editor/SDK/WebGL 必须单独 opt-in 并报告。运行结果以 Actions 页面为准。

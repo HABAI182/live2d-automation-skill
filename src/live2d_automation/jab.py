@@ -1,11 +1,17 @@
 """Experimental official Java Access Bridge client, scoped to one Cubism PID."""
 
 import ctypes as C
+import sys
 import time
 from ctypes import wintypes as W
 from pathlib import Path
 
 import psutil
+
+
+def require_windows() -> None:
+    if sys.platform != "win32":
+        raise RuntimeError("Java Access Bridge requires Windows")
 
 
 class Info(C.Structure):
@@ -48,6 +54,7 @@ class Todo(C.Structure):
 
 class Bridge:
     def __init__(self, pid):
+        require_windows()
         if not hasattr(C, "WinDLL"):
             raise RuntimeError("Java Access Bridge requires Windows")
         self.pid = pid
@@ -94,6 +101,8 @@ class Bridge:
             time.sleep(0.01)
 
     def windows(self):
+        if sys.platform != "win32":
+            raise RuntimeError("Java Access Bridge requires Windows")
         windows = []
 
         @C.WINFUNCTYPE(W.BOOL, W.HWND, W.LPARAM)

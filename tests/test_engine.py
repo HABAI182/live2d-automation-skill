@@ -1,10 +1,11 @@
 import asyncio
 import copy
-from datetime import date
+from datetime import date, datetime, timezone
 
 import pytest
 from filelock import FileLock
 
+from live2d_automation.engine import adapter_date
 from live2d_automation.storage import atomic_json
 
 
@@ -42,6 +43,18 @@ async def test_default_is_dry_run(engine, blink_ops):
     )
     assert result.data["dry_run"] and not engine.ws.params
     assert all(m != "EditBegin" for m, _ in engine.ws.calls)
+
+
+@pytest.mark.parametrize("hour,minute,second,expired", [(14, 59, 59, False), (15, 0, 0, True)])
+async def test_alpha_expiry_uses_vendor_jst_boundary(engine, blink_ops, hour, minute, second, expired):
+    instant = datetime(2026, 10, 18, hour, minute, second, tzinfo=timezone.utc)
+    engine.today = lambda: adapter_date(instant)
+    result = await apply(engine, blink_ops)
+    if expired:
+        assert result.status == "blocked" and result.error["code"] == "EDITOR_ALPHA_EXPIRED"
+        assert not any(method == "EditBegin" for method, _ in engine.ws.calls)
+    else:
+        assert result.status == "verified"
 
 
 async def test_second_half_failure_restores_first_half(engine, blink_ops):
