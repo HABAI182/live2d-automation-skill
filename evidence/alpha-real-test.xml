@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.100" timestamp="2026-10-15T13:04:56.652629+08:00" hostname="DESKTOP-DVV8TM5"><testcase classname="tests.test_real_editor" name="test_real_editor_read_snapshot" time="0.079" /></testsuite></testsuites>
